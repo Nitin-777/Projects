@@ -1,0 +1,58 @@
+/* Reset and base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header image */
+header .Sentinels {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.Sentinels img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff4c60;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#message p {
+  font-size: 17px;
+  color: #ddd;
+  text-align: justify;
+  background-color: #1a1a1a;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 76, 96, 0.3);
+  border-left: 4px solid #ff4c60;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  background-color: #000;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#reserved h3 {
+  color: #aaa;
+  font-weight: 500;
+}
