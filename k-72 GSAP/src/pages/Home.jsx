@@ -1,7 +1,7 @@
 import React from 'react'
 import Video from '../components/home/Video'
-import HomeBottomText from '../components/home/HomeBottomtext'
-import HomeHeroText from '../components/home/Homeherotext'
+import HomeBottomText from '../../components/home/HomeBottomtext'
+import HomeHeroText from '../../components/home/HomeHerotext'
 import Clock from '../components/common/Clock'
 import NavBar from '../components/Navigation/NavBar'
 const Home = () => {
