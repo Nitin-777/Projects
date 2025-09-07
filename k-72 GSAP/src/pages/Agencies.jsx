@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 import React, { useRef } from 'react'
+import Clock from '../components/common/Clock.jsx'
 import { images } from '../assets/images.jsx'
 
 const Agence = () => {
@@ -35,7 +36,7 @@ const Agence = () => {
   return (
 
 
-<div>
+<div className=' text-white bg-black'>
      <div className='Section1'> 
 
     <div ref={ imageDivref }className=' absolute h-[20vw] w-[15vw] rounded-[2rem] top-56 left-[30vw] bg-red-500 overflow-hidden' >
@@ -51,6 +52,7 @@ const Agence = () => {
     </div>
    </div>
    <div className='Section2 h-screen '></div>
+       <Clock city="Delhi" timezone="Asia/Kolkata" />
 </div>
   )
 }

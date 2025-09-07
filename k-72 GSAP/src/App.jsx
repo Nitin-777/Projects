@@ -6,6 +6,7 @@ import Projects from './pages/Projects'
 import Agence from './pages/Agencies'
 import NavBar from './components/Navigation/NavBar'
 
+
 function App() {
  
 

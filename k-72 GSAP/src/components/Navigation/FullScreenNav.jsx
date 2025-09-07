@@ -3,11 +3,16 @@ import { navImages } from "../../assets/NavImage.jsx";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { NavbarContext } from '../context/NavContext.jsx'
+import Clock from "../common/Clock.jsx";
 
 const FullScreenNav = () => {
-       const fullNavLinksRef=useRef(null);
-       const fullScreenref=useRef(null)
-       const [navOpen,setNavOpen] =useContext(NavbarContext)
+        const fullNavLinksRef = useRef(null)
+
+    const fullScreenRef = useRef(null)
+
+    const [navOpen, setNavOpen] = useContext(NavbarContext)
+
+
 
     function gsapAnimation() {
         const tl = gsap.timeline()
@@ -68,7 +73,7 @@ const FullScreenNav = () => {
     }, [navOpen])
 
   return (
-    <div ref={fullScreenref} className="fullscreennav  hidden h-screen w-full overflow-hidden absolute z-50 text-white bg-black">
+    <div ref={fullScreenRef} className="fullscreennav  hidden text-white overflow-hidden h-screen w-full z-50 absolute">
       <div className="h-screen w-full fixed">
          <div className='h-full w-full flex '>
             <div className='stairing h-full w-1/5  bg-black'> </div>
@@ -285,9 +290,15 @@ const FullScreenNav = () => {
             </div>
           </div>
         </div>
-        
+          
+
       </div>
-    </div>
+      
+              
+    </div>    
+              <div className=" link origin top absolute bottom-4 left-4">
+               <Clock city="Delhi" timezone="Asia/Kolkata" />
+               </div>
     </div>
   );
 };
