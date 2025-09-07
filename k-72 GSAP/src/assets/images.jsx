@@ -15,4 +15,4 @@ import img14 from './images_agencies/img14.jpg'
 
 
 
-export const images=[img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14];
+export const images=[img3,img1,img2,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14];

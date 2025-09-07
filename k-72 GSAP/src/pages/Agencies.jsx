@@ -10,8 +10,6 @@ const Agence = () => {
         const imageDivref= useRef(null)
         const imageref= useRef(null)
 
-       
-
       useGSAP(function(){
         gsap.to(imageDivref.current,{
          scrollTrigger:{
